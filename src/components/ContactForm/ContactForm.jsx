@@ -28,7 +28,7 @@ const ContactForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, { resetForm }) => {
-    dispatch(addContact(values.name, values.tel));
+    dispatch(addContact(values.name, values.number));
     resetForm();
   };
   return (
